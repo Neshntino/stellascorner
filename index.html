@@ -189,6 +189,7 @@
             <button class="tab-btn text-xs font-medium px-5 py-2 rounded-full border border-white/10 text-neutral-400 transition-all hover:border-brand-green/50" onclick="filterProducts('journal',this)">Journals</button>
             <button class="tab-btn text-xs font-medium px-5 py-2 rounded-full border border-white/10 text-neutral-400 transition-all hover:border-brand-green/50" onclick="filterProducts('memoir',this)">Memoirs</button>
             <button class="tab-btn text-xs font-medium px-5 py-2 rounded-full border border-white/10 text-neutral-400 transition-all hover:border-brand-green/50" onclick="filterProducts('healing',this)">Healing</button>
+            <button class="tab-btn text-xs font-medium px-5 py-2 rounded-full border border-white/10 text-neutral-400 transition-all hover:border-brand-green/50" onclick="filterProducts('shirts',this)">Shirts</button>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productsGrid">
             <!-- Purple Mandala Journal KSh 800 -->
@@ -236,6 +237,63 @@
             <div class="pcard group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden transition-all duration-300 reveal" data-category="healing" style="transition-delay:.4s">
                 <div class="relative overflow-hidden aspect-[3/4]"><img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=800&fit=crop" alt="Crystal Water Bottle" class="pimg w-full h-full object-cover transition-transform duration-700"></div>
                 <div class="p-5"><div class="text-[10px] text-neutral-500 uppercase tracking-wider mb-2">Wellness</div><h3 class="font-serif text-lg mb-2">Crystal Water Bottle</h3><p class="text-neutral-500 text-sm font-light mb-4">Eco-friendly bottle with crystal infuser — stay hydrated, align your energy.</p><div class="flex items-center justify-between"><span class="text-brand-gold font-serif text-xl">KSh 500</span><button onclick="addToCart('Crystal Water Bottle',500)" class="flex items-center gap-1.5 bg-white/5 hover:bg-brand-green hover:text-black border border-white/10 hover:border-brand-green text-white text-xs font-medium px-4 py-2 rounded-full transition-all"><span class="iconify text-sm" data-icon="mdi:cart-plus"></span>Add</button></div></div>
+            </div>
+            
+            <!-- BLACK T-SHIRT WITH PERSON PATTERN - NEW SHIRT -->
+            <div class="pcard group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden transition-all duration-300 reveal" data-category="shirts" style="transition-delay:.05s">
+                <div class="relative overflow-hidden aspect-[3/4] bg-gradient-to-b from-neutral-900/50 to-black">
+                    <img src="https://z-cdn-media.chatglm.cn/files/15eff9cc-5bf0-4146-93b2-267fc6289072.jpg?auth_key=1884200197-96ea9491034d4f13a52db672facd8e05-0-8c14316ff751da36589abdaeae79bf3a" alt="Black T-Shirt with Person Pattern" class="pimg w-full h-full object-cover transition-transform duration-700">
+                    <div class="absolute top-3 left-3 bg-black/90 text-white text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-white/20">New Arrival</div>
+                </div>
+                <div class="p-5">
+                    <div class="text-[10px] text-neutral-500 uppercase tracking-wider mb-2">Apparel · Shirt</div>
+                    <h3 class="font-serif text-lg mb-2">Black Graphic Tee</h3>
+                    <p class="text-neutral-500 text-sm font-light mb-4">Premium black t-shirt featuring unique person pattern artwork. Complete look shown with accessories.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-brand-gold font-serif text-xl">KSh 1200</span>
+                        <button onclick="addToCart('Black Graphic Tee',1200)" class="flex items-center gap-1.5 bg-white/5 hover:bg-brand-green hover:text-black border border-white/10 hover:border-brand-green text-white text-xs font-medium px-4 py-2 rounded-full transition-all">
+                            <span class="iconify text-sm" data-icon="mdi:cart-plus"></span>Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- WHITE HANES T-SHIRT WITH WOMAN ILLUSTRATION - NEW SHIRT -->
+            <div class="pcard group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden transition-all duration-300 reveal" data-category="shirts" style="transition-delay:.1s">
+                <div class="relative overflow-hidden aspect-[3/4] bg-gradient-to-b from-white/5 to-black">
+                    <img src="https://z-cdn-media.chatglm.cn/files/a39d7f42-9856-49c3-9532-10364c6d4f5c.jpg?auth_key=1884200197-9d13a866193e4350ab51bf60d833ad86-0-9d130a166bce8186d1f1d97d21255d91" alt="White Hanes T-Shirt" class="pimg w-full h-full object-cover transition-transform duration-700">
+                    <div class="absolute top-3 left-3 bg-white/90 text-black text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Hanes</div>
+                </div>
+                <div class="p-5">
+                    <div class="text-[10px] text-neutral-500 uppercase tracking-wider mb-2">Apparel · Shirt</div>
+                    <h3 class="font-serif text-lg mb-2">White Lady Illustration Tee</h3>
+                    <p class="text-neutral-500 text-sm font-light mb-4">Classic Hanes white tee with elegant woman wearing hat illustration. Styled with pearl necklace.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-brand-gold font-serif text-xl">KSh 1100</span>
+                        <button onclick="addToCart('White Lady Illustration Tee',1100)" class="flex items-center gap-1.5 bg-white/5 hover:bg-brand-green hover:text-black border border-white/10 hover:border-brand-green text-white text-xs font-medium px-4 py-2 rounded-full transition-all">
+                            <span class="iconify text-sm" data-icon="mdi:cart-plus"></span>Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- BLACK HOPI PROPHECY T-SHIRT - NEW SHIRT -->
+            <div class="pcard group bg-neutral-900/30 border border-white/5 rounded-2xl overflow-hidden transition-all duration-300 reveal" data-category="shirts" style="transition-delay:.15s">
+                <div class="relative overflow-hidden aspect-[3/4] bg-gradient-to-b from-green-900/20 to-black">
+                    <img src="https://z-cdn-media.chatglm.cn/files/b5101776-168f-447e-88ea-860663823faa.jpg?auth_key=1884200197-15b37c4cd4f34b63bc7fcb585e6be84b-0-829a95341db6a297e5e138fc1941ea65" alt="Hopi Prophecy T-Shirt" class="pimg w-full h-full object-cover transition-transform duration-700">
+                    <div class="absolute top-3 left-3 bg-brand-green/90 text-black text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Spiritual</div>
+                </div>
+                <div class="p-5">
+                    <div class="text-[10px] text-neutral-500 uppercase tracking-wider mb-2">Apparel · Shirt</div>
+                    <h3 class="font-serif text-lg mb-2">Hopi Prophecy Tee</h3>
+                    <p class="text-neutral-500 text-sm font-light mb-4">Black tee featuring "Warriors of the Rainbow" Hopi Prophecy design. Perfect for spiritual expression.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-brand-gold font-serif text-xl">KSh 1300</span>
+                        <button onclick="addToCart('Hopi Prophecy Tee',1300)" class="flex items-center gap-1.5 bg-white/5 hover:bg-brand-green hover:text-black border border-white/10 hover:border-brand-green text-white text-xs font-medium px-4 py-2 rounded-full transition-all">
+                            <span class="iconify text-sm" data-icon="mdi:cart-plus"></span>Add
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -314,210 +372,290 @@
         <div class="space-y-6">
             <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-xl bg-brand-green/10 border border-brand-green/20 flex items-center justify-center flex-shrink-0"><span class="iconify text-brand-green" data-icon="mdi:whatsapp"></span></div><div><div class="text-sm font-medium mb-1">WhatsApp</div><a href="https://wa.me/254755862101" target="_blank" class="text-neutral-400 text-sm hover:text-brand-green transition-colors">0755 862 101</a></div></div>
             <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-xl bg-brand-green/10 border border-brand-green/20 flex items-center justify-center flex-shrink-0"><span class="iconify text-brand-green" data-icon="mdi:email-outline"></span></div><div><div class="text-sm font-medium mb-1">Email</div><a href="mailto:healingyou.co@gmail.com" class="text-neutral-400 text-sm hover:text-brand-green transition-colors">healingyou.co@gmail.com</a></div></div>
-            <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-xl bg-brand-green/10 border border-brand-green/20 flex items-center justify-center flex-shrink-0"><span class="iconify text-brand-green" data-icon="mdi:phone-outline"></span></div><div><div class="text-sm font-medium mb-1">Call</div><a href="tel:+254755862101" class="text-neutral-400 text-sm hover:text-brand-green transition-colors">0755 862 101</a></div></div>
-            <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-xl bg-brand-green/10 border border-brand-green/20 flex items-center justify-center flex-shrink-0"><span class="iconify text-brand-green" data-icon="mdi:map-marker-outline"></span></div><div><div class="text-sm font-medium mb-1">Location</div><span class="text-neutral-400 text-sm">Nairobi, Kenya</span></div></div>
-        </div></div>
-        <div class="reveal" style="transition-delay:.2s"><form id="contactForm" onsubmit="handleContactSubmit(event)" class="bg-neutral-900/30 border border-white/5 rounded-2xl p-8"><div class="space-y-5">
-            <div><label class="text-xs text-neutral-400 mb-2 block">Full Name *</label><input type="text" name="name" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Your name"></div>
-            <div><label class="text-xs text-neutral-400 mb-2 block">Email *</label><input type="email" name="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="you@example.com"></div>
-            <div><label class="text-xs text-neutral-400 mb-2 block">Phone</label><input type="tel" name="phone" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="+254 7XX XXX XXX"></div>
-            <div><label class="text-xs text-neutral-400 mb-2 block">Message *</label><textarea name="message" required rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all resize-none" placeholder="Tell us what you need..."></textarea></div>
-            <button type="submit" class="w-full bg-brand-green hover:bg-brand-green-dark text-black text-sm font-medium py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-green/20 flex items-center justify-center gap-2"><span class="iconify" data-icon="mdi:send"></span>Send Message</button>
-        </div></form></div>
+            <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-xl bg-brand-green/10 border border-brand-green/20 flex items-center justify-center flex-shrink-0"><span class="iconify text-brand-green" data-icon="mdi:map-marker-outline"></span></div><div><div class="text-sm font-medium mb-1">Location</div><p class="text-neutral-400 text-sm">Nairobi, Kenya</p></div></div>
+        </div>
+        </div>
+        <div class="reveal" style="transition-delay:.2s">
+            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-5">
+                <div class="grid grid-cols-2 gap-4">
+                    <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">First Name</label><input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Jane"></div>
+                    <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Last Name</label><input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Doe"></div>
+                </div>
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Email</label><input type="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="jane@example.com"></div>
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Message</label><textarea rows="4" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all resize-none" placeholder="Tell us what you're looking for..."></textarea></div>
+                <button type="submit" class="w-full bg-brand-green hover:bg-brand-green-dark text-black text-sm font-medium px-6 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-green/20">Send Message</button>
+            </form>
+        </div>
     </div></div>
 </section>
 
 <!-- FOOTER -->
-<footer class="border-t border-white/5 py-16">
+<footer class="py-16 border-t border-white/5">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid md:grid-cols-4 gap-12 mb-12">
             <div class="md:col-span-2">
-                <div class="flex items-center gap-3 mb-4"><div class="w-9 h-9 rounded-full logo-circle border border-brand-green/30 flex items-center justify-center"><span class="iconify text-brand-green text-sm" data-icon="mdi:leaf"></span></div><span class="font-serif text-lg">Stella's <span class="text-brand-green">Corner</span></span></div>
-                <p class="text-neutral-500 text-sm font-light leading-relaxed max-w-sm mb-6">Healing · Growth · Creativity — Journals, drawings, healing modalities, candles, essential oils, water bottles, and courses crafted with love in Nairobi.</p>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-9 h-9 rounded-full logo-circle border border-brand-green/30 flex items-center justify-center">
+                        <span class="iconify text-brand-green text-sm" data-icon="mdi:leaf"></span>
+                    </div>
+                    <span class="font-serif text-lg tracking-wide">Stella's <span class="text-brand-green">Corner</span></span>
+                </div>
+                <p class="text-neutral-500 text-sm font-light leading-relaxed max-w-sm mb-6">Your sacred space for handcrafted journals, healing modalities, original drawings, and transformative online courses.</p>
                 <div class="flex gap-3">
-                    <a href="https://wa.me/254755862101" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-green/10 hover:border-brand-green/30 transition-all"><span class="iconify text-neutral-400" data-icon="mdi:whatsapp"></span></a>
-                    <a href="https://www.tiktok.com/@stellascorner" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-green/10 hover:border-brand-green/30 transition-all"><span class="iconify text-neutral-400" data-icon="ic:baseline-tiktok"></span></a>
-                    <a href="https://facebook.com/stellascorner" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-green/10 hover:border-brand-green/30 transition-all"><span class="iconify text-neutral-400" data-icon="mdi:facebook"></span></a>
-                    <a href="mailto:healingyou.co@gmail.com" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-green/10 hover:border-brand-green/30 transition-all"><span class="iconify text-neutral-400" data-icon="mdi:email-outline"></span></a>
+                    <a href="#" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-green/10 hover:border-brand-green/30 transition-all"><span class="iconify text-neutral-400 text-sm" data-icon="mdi:instagram"></span></a>
+                    <a href="#" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-green/10 hover:border-brand-green/30 transition-all"><span class="iconify text-neutral-400 text-sm" data-icon="mdi:facebook"></span></a>
+                    <a href="#" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-green/10 hover:border-brand-green/30 transition-all"><span class="iconify text-neutral-400 text-sm" data-icon="mdi:twitter"></span></a>
+                    <a href="https://wa.me/254755862101" class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-green/10 hover:border-brand-green/30 transition-all"><span class="iconify text-neutral-400 text-sm" data-icon="mdi:whatsapp"></span></a>
                 </div>
             </div>
-            <div><h4 class="text-sm font-medium mb-4">Quick Links</h4><div class="space-y-3"><a href="#home" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Home</a><a href="#about" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">About</a><a href="#products" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Shop</a><a href="#drawings" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Drawings</a><a href="#courses" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Courses</a><a href="#contact" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Contact</a></div></div>
-            <div><h4 class="text-sm font-medium mb-4">Support</h4><div class="space-y-3"><a href="#contact" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Shipping</a><a href="#contact" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Returns</a><a href="#contact" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">FAQs</a><a href="https://www.jumia.co.ke" target="_blank" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Jumia Store</a></div></div>
+            <div>
+                <h4 class="text-sm font-medium mb-4">Quick Links</h4>
+                <div class="space-y-3">
+                    <a href="#home" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Home</a>
+                    <a href="#about" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">About</a>
+                    <a href="#products" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Shop</a>
+                    <a href="#drawings" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Drawings</a>
+                    <a href="#courses" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Courses</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-sm font-medium mb-4">Support</h4>
+                <div class="space-y-3">
+                    <a href="#contact" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Contact Us</a>
+                    <a href="#" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">FAQ</a>
+                    <a href="#" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Shipping Info</a>
+                    <a href="#" class="block text-neutral-500 text-sm hover:text-brand-green transition-colors">Returns Policy</a>
+                </div>
+            </div>
         </div>
-        <div class="border-t border-white/5 pt-8 mb-8"><div class="flex flex-wrap items-center justify-center gap-6"><span class="text-xs text-neutral-600 uppercase tracking-wider">Payments:</span><div class="flex items-center gap-2 text-neutral-500"><span class="iconify text-xl" data-icon="mdi:cellphone"></span><span class="text-xs">M-Pesa</span></div><div class="flex items-center gap-2 text-neutral-500"><span class="iconify text-xl" data-icon="mdi:credit-card-outline"></span><span class="text-xs">Visa / Mastercard</span></div><div class="flex items-center gap-2 text-neutral-500"><span class="iconify text-xl" data-icon="mdi:cash"></span><span class="text-xs">Cash on Delivery</span></div></div></div>
-        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4"><p class="text-neutral-600 text-xs">&copy; 2026 Stella's Corner. All rights reserved.</p><p class="text-neutral-700 text-xs">Crafted with <span class="text-brand-green">♥</span> in Nairobi, Kenya @Rose.Neshntino</p></div>
+        <div class="h-px bg-white/5 mb-8"></div>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-neutral-600 text-xs">© 2024 Stella's Corner. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="text-neutral-600 text-xs hover:text-neutral-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="text-neutral-600 text-xs hover:text-neutral-400 transition-colors">Terms of Service</a>
+            </div>
+        </div>
     </div>
 </footer>
 
-<!-- FLOATING CART -->
-<button id="cartFab" onclick="openOrderModal()" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-brand-green hover:bg-brand-green-dark text-black rounded-full shadow-lg shadow-brand-green/20 flex items-center justify-center transition-all hover:scale-110 hidden"><span class="iconify text-2xl" data-icon="mdi:cart"></span><span id="cartBadge" class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center hidden">0</span></button>
-
 <!-- ORDER MODAL -->
-<div id="orderModal" class="mo fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-    <div class="mc bg-[#0a0a0a] border border-white/10 rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
-        <div class="flex items-center justify-between p-6 border-b border-white/5"><div class="flex items-center gap-3"><span class="iconify text-brand-green text-xl" data-icon="mdi:cart-outline"></span><h3 class="font-serif text-xl">Your Order</h3></div><button onclick="closeOrderModal()" class="w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors"><span class="iconify" data-icon="mdi:close"></span></button></div>
-        <div id="cartItems" class="p-6"><div id="emptyCart" class="text-center py-10"><span class="iconify text-4xl text-neutral-700 mb-3 mx-auto block" data-icon="mdi:cart-off"></span><p class="text-neutral-500 text-sm">Your cart is empty</p></div><div id="cartItemsList" class="space-y-3 hidden"></div></div>
-        <div id="orderForm" class="px-6 pb-6 hidden"><div class="border-t border-white/5 pt-6">
-            <h4 class="text-sm font-medium mb-4">Delivery Details</h4>
-            <div class="space-y-4">
-                <div><label class="text-xs text-neutral-400 mb-1.5 block">Full Name *</label><input type="text" id="orderName" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Your name"></div>
-                <div><label class="text-xs text-neutral-400 mb-1.5 block">Phone Number *</label><input type="tel" id="orderPhone" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-600 transition-all" placeholder="+254 7XX XXX XXX"></div>
-                <div><label class="text-xs text-neutral-400 mb-1.5 block">Delivery Address *</label><input type="text" id="orderAddress" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Street, estate, city"></div>
-                <div><label class="text-xs text-neutral-400 mb-1.5 block">Payment Method *</label><select id="orderPayment" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white transition-all appearance-none cursor-pointer"><option value="" class="bg-[#0a0a0a]">Select payment method</option><option value="mpesa" class="bg-[#0a0a0a]">M-Pesa (Lipa na M-Pesa)</option><option value="card" class="bg-[#0a0a0a]">Visa / Mastercard</option><option value="cod" class="bg-[#0a0a0a]">Cash on Delivery</option></select></div>
-                <div><label class="text-xs text-neutral-400 mb-1.5 block">Notes</label><textarea id="orderNotes" rows="2" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder-neutral-600 transition-all resize-none" placeholder="Special instructions..."></textarea></div>
-            </div>
-            <div class="flex items-center justify-between mt-6 pt-4 border-t border-white/5"><span class="text-neutral-400 text-sm">Total</span><span id="orderTotal" class="font-serif text-2xl text-brand-gold">KSh 0</span></div>
-            <button type="button" onclick="handlePayment()" class="w-full mt-4 bg-brand-green hover:bg-brand-green-dark text-black text-sm font-medium py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-green/20 flex items-center justify-center gap-2"><span class="iconify" data-icon="mdi:shield-check-outline"></span>Proceed to Payment</button>
-        </div></div>
-    </div>
-</div>
-
-<!-- M-PESA PIN MODAL -->
-<div id="mpesaModal" class="mo fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-    <div class="mc bg-[#1a1a1a] rounded-3xl w-full max-w-sm overflow-hidden" style="animation:slideUp .4s ease-out">
-        <div class="bg-[#4CAF50] px-6 py-5 text-center"><div class="text-white text-lg font-bold tracking-wide">M-PESA</div><div class="text-white/80 text-xs mt-1">Lipa na M-Pesa</div></div>
-        <div id="mpesaBody" class="px-6 py-6">
-            <div class="text-center mb-4"><div class="text-white/60 text-xs mb-1">Send money to</div><div class="text-white font-medium text-lg">0729 651 340</div><div class="text-white/50 text-[11px] mt-1">Stella's Corner</div></div>
-            <div class="bg-white/5 rounded-xl p-4 mb-6 text-center"><div class="text-white/60 text-xs mb-1">Amount</div><div id="mpesaAmount" class="text-3xl font-bold text-white">KSh 0</div></div>
-            <div class="flex justify-center gap-4 mb-5"><div class="pin-dot" id="pin0"></div><div class="pin-dot" id="pin1"></div><div class="pin-dot" id="pin2"></div><div class="pin-dot" id="pin3"></div></div>
-            <div class="text-center text-white/40 text-xs mb-5">Enter your M-Pesa PIN</div>
-            <div class="grid grid-cols-3 gap-3 justify-items-center max-w-[240px] mx-auto">
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('1')">1</button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('2')">2</button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('3')">3</button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('4')">4</button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('5')">5</button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('6')">6</button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('7')">7</button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('8')">8</button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('9')">9</button>
-                <button class="npbtn bg-white/5 text-red-400 border border-white/10 rounded-xl text-base" onclick="clearPin()"><span class="iconify text-xl" data-icon="mdi:backspace-outline"></span></button>
-                <button class="npbtn bg-white/5 text-white border border-white/10 rounded-xl" onclick="enterPin('0')">0</button>
-                <button class="npbtn bg-[#4CAF50]/20 text-[#4CAF50] border border-[#4CAF50]/30 rounded-xl text-base" onclick="submitPin()"><span class="iconify text-2xl" data-icon="mdi:check"></span></button>
-            </div>
-            <button onclick="closeMpesa()" class="w-full mt-5 text-white/40 text-xs hover:text-white/60 transition-colors text-center">Cancel</button>
+<div id="orderModal" class="mo fixed inset-0 z-[100] flex items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeOrderModal()"></div>
+    <div class="mc relative bg-[#0a0a0a] border border-white/10 rounded-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
+        <div class="p-6 border-b border-white/5 flex items-center justify-between">
+            <h3 class="font-serif text-xl">Your Order</h3>
+            <button onclick="closeOrderModal()" class="text-neutral-400 hover:text-white transition-colors"><span class="iconify text-xl" data-icon="mdi:close"></span></button>
         </div>
-        <div id="mpesaProcessing" class="px-6 py-12 text-center hidden"><div class="w-16 h-16 border-4 border-[#4CAF50]/30 border-t-[#4CAF50] rounded-full mx-auto mb-4" style="animation:spin 1s linear infinite"></div><div class="text-white font-medium mb-2">Processing Payment...</div><div class="text-white/50 text-sm">Please wait</div></div>
-        <div id="mpesaSuccess" class="px-6 py-10 text-center hidden"><div class="w-16 h-16 rounded-full bg-[#4CAF50]/20 flex items-center justify-center mx-auto mb-4"><span class="iconify text-[#4CAF50] text-3xl" data-icon="mdi:check-circle"></span></div><div class="text-white font-medium text-lg mb-2">Payment Initiated!</div><div class="text-white/50 text-sm mb-6">Your order has been sent to Stella via WhatsApp.</div><button onclick="closeMpesaAndReset()" class="bg-[#4CAF50] text-white font-medium py-3 px-8 rounded-full">Done</button></div>
+        <div class="p-6">
+            <div id="cartItems" class="space-y-3 mb-6"></div>
+            <div id="cartEmpty" class="text-center py-8">
+                <span class="iconify text-4xl text-neutral-700 mb-3" data-icon="mdi:cart-off"></span>
+                <p class="text-neutral-500 text-sm">Your cart is empty</p>
+            </div>
+            <div id="cartTotal" class="hidden border-t border-white/5 pt-4 mb-6">
+                <div class="flex justify-between items-center">
+                    <span class="text-neutral-400">Total</span>
+                    <span id="totalAmount" class="font-serif text-2xl text-brand-gold">KSh 0</span>
+                </div>
+            </div>
+            <div id="checkoutForm" class="hidden space-y-4">
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Full Name</label><input type="text" required id="customerName" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Jane Doe"></div>
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Phone (WhatsApp)</label><input type="tel" required id="customerPhone" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="0712 345 678"></div>
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Delivery Location</label><input type="text" required id="customerLocation" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Nairobi CBD"></div>
+                <button onclick="processOrder()" class="w-full bg-brand-green hover:bg-brand-green-dark text-black text-sm font-medium px-6 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-green/20">Place Order via WhatsApp</button>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- TOAST -->
-<div id="toast" class="toast fixed top-20 right-6 z-50 bg-[#0a0a0a] border border-brand-green/30 rounded-xl px-5 py-3 flex items-center gap-3 shadow-xl shadow-black/50"><span class="iconify text-brand-green text-lg" data-icon="mdi:check-circle"></span><span id="toastMessage" class="text-sm text-neutral-300">Added</span></div>
-
-<!-- WHATSAPP FAB -->
-<a href="https://wa.me/254755862101?text=Hello%20Stella!%20I'm%20interested%20in%20your%20products." target="_blank" class="fixed bottom-6 left-6 z-40 w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-lg shadow-[#25D366]/20 flex items-center justify-center transition-all hover:scale-110" title="Chat on WhatsApp"><span class="iconify text-2xl" data-icon="mdi:whatsapp"></span></a>
+<!-- TOAST NOTIFICATION -->
+<div id="toast" class="toast fixed top-20 right-4 z-[200] bg-[#0a0a0a] border border-brand-green/30 rounded-xl px-5 py-3 flex items-center gap-3 shadow-lg">
+    <span class="iconify text-brand-green" data-icon="mdi:check-circle"></span>
+    <span id="toastMessage" class="text-sm text-white">Item added to cart</span>
+</div>
 
 <script>
-// ===== CONFIG =====
-const WHATSAPP = '254755862101';
-const MPESA_PAYBILL = '0729651340';
-let cart = [], pin = '';
+// Cart System
+let cart = [];
 
-// ===== CART =====
-function addToCart(n, p) { const e = cart.find(i => i.name === n); if (e) e.qty++; else cart.push({name: n, price: p, qty: 1}); updateCartUI(); showToast(n + ' added to cart'); }
-function removeFromCart(i) { cart.splice(i, 1); updateCartUI(); }
+function addToCart(name, price) {
+    const existing = cart.find(item => item.name === name);
+    if (existing) {
+        existing.qty += 1;
+    } else {
+        cart.push({ name, price, qty: 1 });
+    }
+    updateCartUI();
+    showToast(`${name} added to cart`);
+}
+
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCartUI();
+}
+
 function updateCartUI() {
-    const t = cart.reduce((s, i) => s + i.qty, 0), fab = document.getElementById('cartFab'), badge = document.getElementById('cartBadge'), empty = document.getElementById('emptyCart'), list = document.getElementById('cartItemsList'), form = document.getElementById('orderForm'), total = document.getElementById('orderTotal');
-    if (t > 0) { fab.classList.remove('hidden'); badge.classList.remove('hidden'); badge.textContent = t; empty.classList.add('hidden'); list.classList.remove('hidden'); form.classList.remove('hidden'); }
-    else { fab.classList.add('hidden'); badge.classList.add('hidden'); empty.classList.remove('hidden'); list.classList.add('hidden'); form.classList.add('hidden'); }
-    list.innerHTML = cart.map((item, i) => '<div class="flex items-center justify-between bg-white/5 rounded-xl p-3"><div class="flex-1"><div class="text-sm font-medium">' + item.name + '</div><div class="text-xs text-neutral-500">KSh ' + item.price.toLocaleString() + ' × ' + item.qty + '</div></div><div class="flex items-center gap-3"><span class="text-sm text-brand-gold font-medium">KSh ' + (item.price * item.qty).toLocaleString() + '</span><button onclick="removeFromCart(' + i + ')" class="text-neutral-600 hover:text-red-400 transition-colors"><span class="iconify text-lg" data-icon="mdi:trash-can-outline"></span></button></div></div>').join('');
-    total.textContent = 'KSh ' + cart.reduce((s, i) => s + (i.price * i.qty), 0).toLocaleString();
+    const cartItems = document.getElementById('cartItems');
+    const cartEmpty = document.getElementById('cartEmpty');
+    const cartTotal = document.getElementById('cartTotal');
+    const checkoutForm = document.getElementById('checkoutForm');
+    const totalAmount = document.getElementById('totalAmount');
+    
+    if (cart.length === 0) {
+        cartItems.innerHTML = '';
+        cartEmpty.classList.remove('hidden');
+        cartTotal.classList.add('hidden');
+        checkoutForm.classList.add('hidden');
+        return;
+    }
+    
+    cartEmpty.classList.add('hidden');
+    cartTotal.classList.remove('hidden');
+    checkoutForm.classList.remove('hidden');
+    
+    let total = 0;
+    cartItems.innerHTML = cart.map((item, i) => {
+        total += item.price * item.qty;
+        return `
+            <div class="flex items-center justify-between bg-white/5 rounded-xl p-3">
+                <div class="flex-1">
+                    <div class="text-sm font-medium">${item.name}</div>
+                    <div class="text-xs text-neutral-500">KSh ${item.price} × ${item.qty}</div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm text-brand-gold font-medium">KSh ${item.price * item.qty}</span>
+                    <button onclick="removeFromCart(${i})" class="text-neutral-500 hover:text-red-400 transition-colors"><span class="iconify text-sm" data-icon="mdi:close"></span></button>
+                </div>
+            </div>
+        `;
+    }).join('');
+    
+    totalAmount.textContent = `KSh ${total.toLocaleString()}`;
 }
 
-// ===== MODALS =====
-function openOrderModal() { document.getElementById('orderModal').classList.add('active'); document.body.style.overflow = 'hidden'; }
-function closeOrderModal() { document.getElementById('orderModal').classList.remove('active'); document.body.style.overflow = ''; }
-document.getElementById('orderModal').addEventListener('click', function(e) { if (e.target === this) closeOrderModal(); });
-
-// ===== PAYMENT =====
-function handlePayment() {
-    const n = document.getElementById('orderName').value.trim(), ph = document.getElementById('orderPhone').value.trim(), a = document.getElementById('orderAddress').value.trim(), p = document.getElementById('orderPayment').value;
-    if (!n || !ph || !a || !p) { showToast('Please fill all required fields', true); return; }
-    if (p === 'mpesa') openMpesa(); else sendToWhatsApp(p);
+function processOrder() {
+    const name = document.getElementById('customerName').value;
+    const phone = document.getElementById('customerPhone').value;
+    const location = document.getElementById('customerLocation').value;
+    
+    if (!name || !phone || !location) {
+        showToast('Please fill in all fields');
+        return;
+    }
+    
+    let total = 0;
+    let items = cart.map(item => {
+        total += item.price * item.qty;
+        return `• ${item.name} (KSh ${item.price} × ${item.qty})`;
+    }).join('\n');
+    
+    const message = `*New Order from Stella's Corner*%0A%0A*Customer:* ${name}%0A*Phone:* ${phone}%0A*Location:* ${location}%0A%0A*Items:*%0A${items}%0A%0A*Total:* KSh ${total.toLocaleString()}`;
+    
+    window.open(`https://wa.me/254755862101?text=${message}`, '_blank');
+    cart = [];
+    updateCartUI();
+    closeOrderModal();
+    showToast('Order sent via WhatsApp!');
 }
 
-// ===== M-PESA PIN =====
-function openMpesa() {
-    const sum = cart.reduce((s, i) => s + (i.price * i.qty), 0);
-    document.getElementById('mpesaAmount').textContent = 'KSh ' + sum.toLocaleString();
-    document.getElementById('mpesaBody').classList.remove('hidden');
-    document.getElementById('mpesaProcessing').classList.add('hidden');
-    document.getElementById('mpesaSuccess').classList.add('hidden');
-    pin = ''; updatePinDots();
-    document.getElementById('mpesaModal').classList.add('active');
-}
-function closeMpesa() { document.getElementById('mpesaModal').classList.remove('active'); }
-function closeMpesaAndReset() { closeMpesa(); cart = []; updateCartUI(); closeOrderModal(); }
-function enterPin(d) { if (pin.length < 4) { pin += d; updatePinDots(); } }
-function clearPin() { pin = pin.slice(0, -1); updatePinDots(); }
-function updatePinDots() { for (let i = 0; i < 4; i++) { const d = document.getElementById('pin' + i); if (i < pin.length) d.classList.add('filled'); else d.classList.remove('filled'); } }
-function submitPin() {
-    if (pin.length < 4) { showToast('Enter 4-digit PIN', true); return; }
-    document.getElementById('mpesaBody').classList.add('hidden');
-    document.getElementById('mpesaProcessing').classList.remove('hidden');
-    setTimeout(function() { sendToWhatsApp('mpesa'); document.getElementById('mpesaProcessing').classList.add('hidden'); document.getElementById('mpesaSuccess').classList.remove('hidden'); }, 2500);
+function openOrderModal() {
+    document.getElementById('orderModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
-// ===== WHATSAPP ORDER =====
-function sendToWhatsApp(payment) {
-    const n = document.getElementById('orderName').value.trim(), ph = document.getElementById('orderPhone').value.trim(), a = document.getElementById('orderAddress').value.trim(), notes = document.getElementById('orderNotes').value.trim();
-    const sum = cart.reduce((s, i) => s + (i.price * i.qty), 0);
-    const labels = { mpesa: 'M-Pesa to ' + MPESA_PAYBILL, card: 'Visa/Mastercard', cod: 'Cash on Delivery' };
-    let msg = '🛒 *NEW ORDER — Stella\'s Corner*\n\n*Customer:* ' + n + '\n*Phone:* ' + ph + '\n*Address:* ' + a + '\n*Payment:* ' + labels[payment] + '\n\n*Items:*\n';
-    cart.forEach(function(i) { msg += '• ' + i.name + ' × ' + i.qty + ' — KSh ' + (i.price * i.qty).toLocaleString() + '\n'; });
-    msg += '\n*Total: KSh ' + sum.toLocaleString() + '*\n';
-    if (notes) msg += '\n*Notes:* ' + notes + '\n';
-    msg += '\nThank you! 🙏';
-    window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank');
-    showToast('Order sent! Check WhatsApp.');
+function closeOrderModal() {
+    document.getElementById('orderModal').classList.remove('active');
+    document.body.style.overflow = '';
 }
 
-// ===== TOAST =====
-function showToast(m, err) {
-    var t = document.getElementById('toast'), msg = document.getElementById('toastMessage'), icon = t.querySelector('.iconify');
-    msg.textContent = m;
-    if (err) { icon.setAttribute('data-icon', 'mdi:alert-circle'); icon.className = 'iconify text-red-400 text-lg'; t.style.borderColor = 'rgba(248,113,113,.3)'; }
-    else { icon.setAttribute('data-icon', 'mdi:check-circle'); icon.className = 'iconify text-brand-green text-lg'; t.style.borderColor = 'rgba(34,197,94,.3)'; }
-    t.classList.add('show'); setTimeout(function() { t.classList.remove('show'); }, 3000);
+// Toast
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    document.getElementById('toastMessage').textContent = message;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
 }
 
-// ===== CONTACT FORM =====
-function handleContactSubmit(e) {
-    e.preventDefault(); var f = e.target;
-    var msg = '📬 *Contact — Stella\'s Corner*\n\n*Name:* ' + f.name.value.trim() + '\n*Email:* ' + f.email.value.trim() + '\n';
-    if (f.phone.value.trim()) msg += '*Phone:* ' + f.phone.value.trim() + '\n';
-    msg += '\n*Message:*\n' + f.message.value.trim();
-    window.open('https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(msg), '_blank');
-    f.reset(); showToast('Message sent!');
-}
-
-// ===== FILTER =====
-function filterProducts(cat, btn) {
-    document.querySelectorAll('.tab-btn').forEach(function(t) { t.classList.remove('active'); t.classList.add('text-neutral-400'); });
-    btn.classList.add('active'); btn.classList.remove('text-neutral-400');
-    document.querySelectorAll('#productsGrid .pcard').forEach(function(c) {
-        if (cat === 'all' || c.dataset.category === cat) { c.style.display = ''; c.style.opacity = '0'; c.style.transform = 'translateY(20px)'; setTimeout(function() { c.style.opacity = '1'; c.style.transform = 'translateY(0)'; }, 50); }
-        else c.style.display = 'none';
+// Product Filter
+function filterProducts(category, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('active');
+        b.classList.add('text-neutral-400');
+    });
+    btn.classList.add('active');
+    btn.classList.remove('text-neutral-400');
+    
+    document.querySelectorAll('#productsGrid .pcard').forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+            card.style.display = '';
+            setTimeout(() => card.classList.add('active'), 50);
+        } else {
+            card.style.display = 'none';
+            card.classList.remove('active');
+        }
     });
 }
 
-// ===== MOBILE MENU =====
-function toggleMobileMenu() { var m = document.getElementById('mobileMenu'), i = document.getElementById('menuIcon'); m.classList.toggle('hidden'); i.setAttribute('data-icon', m.classList.contains('hidden') ? 'mdi:menu' : 'mdi:close'); }
-function closeMobileMenu() { document.getElementById('mobileMenu').classList.add('hidden'); document.getElementById('menuIcon').setAttribute('data-icon', 'mdi:menu'); }
+// Mobile Menu
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const icon = document.getElementById('menuIcon');
+    menu.classList.toggle('hidden');
+    icon.setAttribute('data-icon', menu.classList.contains('hidden') ? 'mdi:menu' : 'mdi:close');
+}
 
-// ===== SCROLL REVEAL =====
-var ro = new IntersectionObserver(function(e) { e.forEach(function(en) { if (en.isIntersecting) en.target.classList.add('active'); }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-document.querySelectorAll('.reveal').forEach(function(el) { ro.observe(el); });
+function closeMobileMenu() {
+    document.getElementById('mobileMenu').classList.add('hidden');
+    document.getElementById('menuIcon').setAttribute('data-icon', 'mdi:menu');
+}
 
-// ===== NAVBAR SCROLL =====
-window.addEventListener('scroll', function() { document.getElementById('navbar').style.borderBottomColor = window.pageYOffset > 100 ? 'rgba(255,255,255,.08)' : 'rgba(255,255,255,.03)'; });
+// Contact Form
+function handleContactSubmit(e) {
+    e.preventDefault();
+    showToast('Message sent! We\'ll get back to you soon.');
+    e.target.reset();
+}
 
-// ===== LEAVES =====
-(function() { var c = document.getElementById('leafParticles'), l = ['🍃', '🌿', '☘️', '🍂']; for (var i = 0; i < 6; i++) { var d = document.createElement('div'); d.className = 'leaf-p'; d.textContent = l[Math.floor(Math.random() * l.length)]; d.style.left = Math.random() * 100 + 'vw'; d.style.animationDuration = (15 + Math.random() * 20) + 's'; d.style.animationDelay = (Math.random() * 15) + 's'; d.style.fontSize = (12 + Math.random() * 10) + 'px'; c.appendChild(d); } })();
+// Scroll Reveal
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-// ===== KEYBOARD =====
-document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { closeOrderModal(); closeMpesa(); } });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Leaf Particles
+function createLeaves() {
+    const container = document.getElementById('leafParticles');
+    const leaves = ['🍃', '🌿', '☘️'];
+    for (let i = 0; i < 12; i++) {
+        const leaf = document.createElement('div');
+        leaf.className = 'leaf-p';
+        leaf.textContent = leaves[Math.floor(Math.random() * leaves.length)];
+        leaf.style.left = Math.random() * 100 + 'vw';
+        leaf.style.animationDuration = (15 + Math.random() * 20) + 's';
+        leaf.style.animationDelay = Math.random() * 20 + 's';
+        container.appendChild(leaf);
+    }
+}
+createLeaves();
+
+// Navbar scroll effect
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 100) {
+        navbar.style.borderBottomColor = 'rgba(255,255,255,0.1)';
+    } else {
+        navbar.style.borderBottomColor = 'rgba(255,255,255,0.05)';
+    }
+    lastScroll = currentScroll;
+});
 </script>
 </body>
 </html>
