@@ -378,10 +378,10 @@
         <div class="reveal" style="transition-delay:.2s">
             <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-5">
                 <div class="grid grid-cols-2 gap-4">
-                    <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">First Name</label><input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Jane"></div>
-                    <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Last Name</label><input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Doe"></div>
+                    <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">First Name</label><input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Amara"></div>
+                    <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Second Name</label><input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Wanjiku"></div>
                 </div>
-                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Email</label><input type="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="jane@example.com"></div>
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Email</label><input type="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="amara.wanjiku@example.com"></div>
                 <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Message</label><textarea rows="4" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all resize-none" placeholder="Tell us what you're looking for..."></textarea></div>
                 <button type="submit" class="w-full bg-brand-green hover:bg-brand-green-dark text-black text-sm font-medium px-6 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-green/20">Send Message</button>
             </form>
@@ -460,10 +460,38 @@
                 </div>
             </div>
             <div id="checkoutForm" class="hidden space-y-4">
-                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Full Name</label><input type="text" required id="customerName" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Jane Doe"></div>
-                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Phone (WhatsApp)</label><input type="tel" required id="customerPhone" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="0712 345 678"></div>
-                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Delivery Location</label><input type="text" required id="customerLocation" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Nairobi CBD"></div>
-                <button onclick="processOrder()" class="w-full bg-brand-green hover:bg-brand-green-dark text-black text-sm font-medium px-6 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-green/20">Place Order via WhatsApp</button>
+                <!-- M-Pesa Payment Instructions -->
+                <div class="bg-green-900/20 border border-green-500/30 rounded-xl p-4 mb-4">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="iconify text-green-400 text-lg" data-icon="mdi:cellphone"></span>
+                        <h4 class="text-sm font-medium text-green-400">M-Pesa Payment Instructions</h4>
+                    </div>
+                    <div class="space-y-2 text-xs text-neutral-300">
+                        <p>1. Go to <strong class="text-white">M-Pesa</strong> on your phone</p>
+                        <p>2. Select <strong class="text-white">Lipa na M-Pesa</strong></p>
+                        <p>3. Choose <strong class="text-white">Send Money</strong></p>
+                        <p>4. Enter number: <strong class="text-green-400 text-base">0729651340</strong></p>
+                        <p>5. Enter the <strong class="text-white">exact total amount</strong> shown below</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-neutral-400">Send Money To:</span>
+                        <span class="text-lg font-bold text-brand-green">0729651340</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <span class="text-sm text-neutral-400">Amount to Send:</span>
+                        <span id="mpesaAmount" class="text-lg font-bold text-brand-gold">KSh 0</span>
+                    </div>
+                </div>
+                
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">First Name</label><input type="text" required id="customerFirstName" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Amara"></div>
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Second Name</label><input type="text" required id="customerSecondName" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="Wanjiku"></div>
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Email</label><input type="email" required id="customerEmail" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all" placeholder="amara.wanjiku@example.com"></div>
+                <div><label class="text-xs text-neutral-500 uppercase tracking-wider mb-2 block">Message</label><textarea rows="3" id="customerMessage" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-neutral-600 transition-all resize-none" placeholder="Any special requests or delivery notes..."></textarea></div>
+                <button onclick="processOrder()" class="w-full bg-brand-green hover:bg-brand-green-dark text-black text-sm font-medium px-6 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-brand-green/20">I've Sent the Money - Confirm Order</button>
+                <p class="text-[10px] text-neutral-600 text-center">By confirming, you acknowledge that you have sent the payment via M-Pesa to 0729651340</p>
             </div>
         </div>
     </div>
@@ -501,6 +529,7 @@ function updateCartUI() {
     const cartTotal = document.getElementById('cartTotal');
     const checkoutForm = document.getElementById('checkoutForm');
     const totalAmount = document.getElementById('totalAmount');
+    const mpesaAmount = document.getElementById('mpesaAmount');
     
     if (cart.length === 0) {
         cartItems.innerHTML = '';
@@ -531,16 +560,19 @@ function updateCartUI() {
         `;
     }).join('');
     
-    totalAmount.textContent = `KSh ${total.toLocaleString()}`;
+    const totalFormatted = `KSh ${total.toLocaleString()}`;
+    totalAmount.textContent = totalFormatted;
+    mpesaAmount.textContent = totalFormatted;
 }
 
 function processOrder() {
-    const name = document.getElementById('customerName').value;
-    const phone = document.getElementById('customerPhone').value;
-    const location = document.getElementById('customerLocation').value;
+    const firstName = document.getElementById('customerFirstName').value;
+    const secondName = document.getElementById('customerSecondName').value;
+    const email = document.getElementById('customerEmail').value;
+    const message = document.getElementById('customerMessage').value;
     
-    if (!name || !phone || !location) {
-        showToast('Please fill in all fields');
+    if (!firstName || !secondName || !email) {
+        showToast('Please fill in all required fields');
         return;
     }
     
@@ -550,13 +582,13 @@ function processOrder() {
         return `• ${item.name} (KSh ${item.price} × ${item.qty})`;
     }).join('\n');
     
-    const message = `*New Order from Stella's Corner*%0A%0A*Customer:* ${name}%0A*Phone:* ${phone}%0A*Location:* ${location}%0A%0A*Items:*%0A${items}%0A%0A*Total:* KSh ${total.toLocaleString()}`;
+    const messageText = `*New Order from Stella's Corner*%0A%0A*Customer:* ${firstName} ${secondName}%0A*Email:* ${email}%0A*Message:* ${message || 'None'}%0A%0A*Items:*%0A${items}%0A%0A*Total:* KSh ${total.toLocaleString()}%0A%0A*Payment:* M-Pesa Send Money to 0729651340`;
     
-    window.open(`https://wa.me/254755862101?text=${message}`, '_blank');
+    window.open(`https://wa.me/254755862101?text=${messageText}`, '_blank');
     cart = [];
     updateCartUI();
     closeOrderModal();
-    showToast('Order sent via WhatsApp!');
+    showToast('Order confirmed! Stella will contact you shortly.');
 }
 
 function openOrderModal() {
